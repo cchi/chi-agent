@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "chi-agent"
+version = "0.1.0"
+description = "FastAPI template with OpenAI integration"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+python-dotenv = "*"
+openai = "*"
+loguru = "*"
+pandas = "*"
+llama-index = "*"
+fastapi = "*"
+uvicorn = "*"
+scikit-learn = "^1.5.2"
+boto3 = "^1.38.36"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+pytest = "^8.3.3"
+
+[tool.poetry.group.notebook.dependencies]
+jupyterlab = "^4.3.0"
+plotly = "^5.24.1"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
